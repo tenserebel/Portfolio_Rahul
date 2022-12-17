@@ -7,9 +7,14 @@ html {
   box-sizing: inherit;
   padding: 0;
 }
-body {
+.body {
   height: 100%;
   overflow: hidden;
+
+  text-align: center;
+  background-color: #151226;
+  background-size: cover;
+  color: white;
 }
 .buttons {
   position: absolute;

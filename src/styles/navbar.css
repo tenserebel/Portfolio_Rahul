@@ -63,8 +63,8 @@ body {
 .right-lnk {
   float: right;
 }
-
-.icontext {
+/* 
+.icontext a {
   width: 100%;
   position: relative;
   text-align: center;
@@ -101,5 +101,72 @@ body {
   }
   100% {
     background-position: 100%;
+  }
+} */
+
+.pvw-title a {
+  display: none;
+}
+.pvw-title:after {
+  content: "Rahul Gupta";
+
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font: 900 1vw "Times New Roman", sans-serif;
+  background: #bf40bf;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .pvw-title:after {
+    content: "Rahul";
+
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font: 900 2.7vw "Times New Roman", sans-serif;
+    background: #bf40bf;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+  }
+}
+
+.ui.menu {
+  display: flex;
+  margin: 1rem 0;
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background: #151226;
+  font-weight: 400;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+  border-radius: 0.28571429rem;
+  min-height: 2.85714286em;
+}
+
+.ui.menu:first-child {
+  margin-top: 0;
+}
+
+.ui.menu:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .ui.menu {
+    display: flex;
+    margin: 1rem 0;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 0.5rem;
+    background: #151226;
+    font-weight: 400;
+    border: 0.5px solid rgba(34, 36, 38, 0.15);
+    box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+    border-radius: 0.28571429rem;
+    min-height: 1.85714286em;
   }
 }
