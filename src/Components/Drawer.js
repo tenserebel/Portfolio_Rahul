@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { Drawer, IconButton, List, ListItem } from "@material-ui/core";
+import {
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  makeStyles,
+} from "@material-ui/core";
 import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Button, Icon } from "semantic-ui-react";
@@ -16,16 +22,25 @@ import "../styles/navbar.css";
 //     color: "white",
 //   },
 // }));
-
+const StyledListItem = makeStyles({
+  paper: {
+    backgroundColor: "#151226",
+  },
+});
 function DrawerComponent() {
   // const classes = useStyles();
   const [openDrawer, setOpenDrawer] = useState(false);
+  const classes = StyledListItem();
   return (
     <>
       <div class="pvw-title">
         <a href="/">Rahul Gupta</a>
       </div>
-      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
+      <Drawer
+        classes={{ paper: classes.paper }}
+        open={openDrawer}
+        onClose={() => setOpenDrawer(false)}
+      >
         <List>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <div class="pvw-title">
