@@ -7,7 +7,7 @@ const Layout = ({ children }) => (
     exit={{ x: 300, opacity: 0 }}
     transition={{
       type: "spring",
-      stiffness: 300,
+      stiffness: 200,
       damping: 20,
     }}
   >

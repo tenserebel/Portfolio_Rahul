@@ -26,7 +26,7 @@ const Navbar = () => {
           <div>
             <Menu primary color="black" pointing>
               <Menu.Item as={Link} to="/home">
-                <div class="pvw-title">
+                <div class="nav-title">
                   <a href="/home">Rahul Gupta</a>
                 </div>
               </Menu.Item>

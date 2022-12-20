@@ -1,0 +1,80 @@
+#spin {
+  color: red;
+}
+#spin:after {
+  content: "";
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  0% {
+    content: "Chutiya";
+  }
+  33% {
+    content: "Student";
+  }
+  66% {
+    content: "ML Enthusist";
+  }
+  99% {
+    content: "Artist";
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+
+.heading-text {
+  text-align: center;
+  font-size: 5ex;
+  font-family: "Playfair Display", serif;
+  margin-top: 5rem;
+}
+
+.changing-text {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .heading-text {
+    margin-left: 0rem;
+    font-size: 2ex;
+  }
+
+  .changing-text {
+    margin-left: 0rem;
+  }
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

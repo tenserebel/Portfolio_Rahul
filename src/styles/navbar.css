@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
 body {
   margin: 0;
   font-family: arial;
@@ -63,72 +65,57 @@ body {
 .right-lnk {
   float: right;
 }
-/* 
-.icontext a {
-  width: 100%;
-  position: relative;
-  text-align: center;
-  font: 900 1vw "Times New Roman", sans-serif;
-  background: #bf40bf;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-}
 
-.icontext:after {
-  content: "Rahul Gupta";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0) 45%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 55%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200%;
-  animation: shine 4s infinite;
-}
-
-@keyframes shine {
-  0% {
-    background-position: -100%;
-  }
-  100% {
-    background-position: 100%;
-  }
-} */
-
-.pvw-title a {
+.nav-title a {
   display: none;
 }
-.pvw-title:after {
+.nav-title:after {
   content: "Rahul Gupta";
 
   width: 100%;
   position: relative;
   text-align: center;
-  font: 900 1vw "Times New Roman", sans-serif;
-  background: #bf40bf;
+  font: 900 1.2vw "Dancing Script", cursive;
+  background: #de7bff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
 }
 
+.nav-title:hover::after {
+  content: "ラーフル・グプタ";
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font: 900 0.9vw "Dancing Script", cursive;
+  background: #de7bff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+.nav-container {
+  padding: 20px 30px 1px 30px;
+}
 @media screen and (max-width: 600px) {
-  .pvw-title:after {
+  .nav-title:after {
     content: "Rahul";
-
     width: 100%;
     position: relative;
     text-align: center;
-    font: 900 2.7vw "Times New Roman", sans-serif;
-    background: #bf40bf;
+    font: 900 4.7vw "Dancing Script", cursive;
+    background: #de7bff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+  }
+
+  .nav-title:hover::after {
+    content: "ラーフル・グプタ";
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font: 900 2.7vw "Dancing Script", cursive;
+    background: #de7bff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
@@ -159,7 +146,7 @@ body {
 @media screen and (max-width: 600px) {
   .ui.menu {
     display: flex;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 0.5rem;
     background: #151226;
@@ -169,4 +156,8 @@ body {
     border-radius: 0.28571429rem;
     min-height: 1.85714286em;
   }
+}
+.svg_icons {
+  transform: scale(1.8);
+  margin-top: 2rem;
 }

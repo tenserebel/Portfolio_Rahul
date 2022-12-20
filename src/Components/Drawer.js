@@ -32,10 +32,11 @@ function DrawerComponent() {
   const [openDrawer, setOpenDrawer] = useState(false);
   const classes = StyledListItem();
   return (
-    <>
-      <div class="pvw-title">
+    <div>
+      <div class="nav-title nav-container">
         <a href="/">Rahul Gupta</a>
       </div>
+
       <Drawer
         classes={{ paper: classes.paper }}
         open={openDrawer}
@@ -43,7 +44,7 @@ function DrawerComponent() {
       >
         <List>
           <ListItem onClick={() => setOpenDrawer(false)}>
-            <div class="pvw-title">
+            <div class="nav-title">
               <a href="/">Rahul Gupta</a>
             </div>
           </ListItem>
@@ -74,9 +75,9 @@ function DrawerComponent() {
         </List>
       </Drawer>
       <IconButton color="primary" onClick={() => setOpenDrawer(!openDrawer)}>
-        <MenuIcon />
+        <MenuIcon className="svg_icons" />
       </IconButton>
-    </>
+    </div>
   );
 }
 export default DrawerComponent;
