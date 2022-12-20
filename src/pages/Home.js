@@ -1,8 +1,7 @@
 import React from "react";
 import "../styles/home.css";
 import Layout from "../Components/Layout";
-import { Grid } from "@material-ui/core";
-import { Button, Image } from "semantic-ui-react";
+import { Button } from "semantic-ui-react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Home = () => {
