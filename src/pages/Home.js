@@ -13,8 +13,8 @@ const Home = () => {
   return (
     <Layout>
       <div>
-        <div class="heading-text">
-          <h1>
+        <div>
+          <h1 class="heading-text">
             Hello <span class="wave">👋</span>, My name is Rahul
           </h1>
         </div>
