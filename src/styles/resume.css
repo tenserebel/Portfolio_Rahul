@@ -1,0 +1,16 @@
+.area {
+  width: 800px;
+  height: 1000px;
+}
+@media screen and (max-width: 600px) {
+  .area {
+    width: 400px;
+    height: 500px;
+  }
+}
+.heading-text {
+  text-align: center;
+  font-size: 5ex;
+  font-family: "Playfair Display", serif;
+  padding: 5rem 0rem 0rem 0rem;
+}

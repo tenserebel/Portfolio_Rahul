@@ -21,6 +21,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
 .heading-text {
   text-align: center;
@@ -29,8 +30,16 @@
   padding: 5rem 0rem 0rem 0rem;
 }
 
+.heading-div {
+  padding: 6rem 0rem 6rem 0rem;
+}
+
 .changing-text {
   text-align: center;
+}
+
+.font-style-header {
+  font-family: "Dancing Script", cursive;
 }
 
 @media screen and (max-width: 600px) {

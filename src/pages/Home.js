@@ -3,6 +3,7 @@ import "../styles/home.css";
 import Layout from "../Components/Layout";
 import { Button } from "semantic-ui-react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -13,21 +14,23 @@ const Home = () => {
   return (
     <Layout>
       <div>
-        <div>
+        <div className="heading-div">
           <h1 class="heading-text">
             Hello <span class="wave">👋</span>, My name is Rahul
           </h1>
-        </div>
-        <div class="changing-text">
-          <div>
-            I am a <span>{text}</span>
-            <Cursor cursorColor="inherit" />
+
+          <div class="changing-text">
+            <div>
+              I am a <span>{text}</span>
+              <Cursor cursorColor="inherit" />
+            </div>
           </div>
+          <img src="images/new.gif" alt="Italian Trulli" />
         </div>
 
         <br></br>
         <hr></hr>
-        <h2>About Me</h2>
+        <h2 className="font-style-header">About Me</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -40,7 +43,7 @@ const Home = () => {
           including versions of Lorem Ipsum.
         </p>
         <hr></hr>
-        <h2>Experience</h2>
+        <h2 className="font-style-header">Experience</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -53,10 +56,13 @@ const Home = () => {
           including versions of Lorem Ipsum.
         </p>
         <hr></hr>
-        <h2>Resume</h2>
-        <Button>View</Button>
+        <h2 className="font-style-header">Resume</h2>
+        <Button as={Link} to="/resume" color="purple">
+          View
+        </Button>
         <hr></hr>
-        <h2>Lets Connect</h2>
+        <h2 className="font-style-header">Lets Connect</h2>
+        <hr></hr>
       </div>
     </Layout>
   );

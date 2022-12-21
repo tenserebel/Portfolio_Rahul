@@ -3,6 +3,7 @@ import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 import Landing from "../pages/Landing";
 import Projects from "../pages/Projects";
+import Resume from "../pages/Resume";
 
 const routes = [
   {
@@ -20,6 +21,10 @@ const routes = [
   {
     path: "/projects",
     element: <Projects />,
+  },
+  {
+    path: "/resume",
+    element: <Resume />,
   },
 ];
 
