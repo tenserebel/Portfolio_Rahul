@@ -14,12 +14,13 @@ const Footer = () => {
       <footer>
         <div class="wrapper">
           <small>
-            &copy;2022 <strong>Phoenix Corp</strong>, All Rights Reserved
+            &copy;2023 <strong>Phoenix Corp</strong>, All Rights Reserved
           </small>
           <nav class="footer-nav">
-            <a href="/home">Back to Top</a>
-            <a href="/contact">Terms of Use</a>
-            <a href="/projects">Privacy</a>
+            <a href="/home">Home</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact Us</a>
+            <a href="/resume">Resume</a>
           </nav>
         </div>
       </footer>

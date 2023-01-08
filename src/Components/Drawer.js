@@ -36,46 +36,62 @@ function DrawerComponent() {
       <div class="nav-title nav-container">
         <a href="/">Rahul Gupta</a>
       </div>
-
-      <Drawer
-        classes={{ paper: classes.paper }}
-        open={openDrawer}
-        onClose={() => setOpenDrawer(false)}
+      <IconButton
+        color="primary"
+        style={{
+          maxWidth: "30px",
+          maxHeight: "80px",
+          minWidth: "30px",
+          minHeight: "60px",
+        }}
+        onClick={() => setOpenDrawer(!openDrawer)}
       >
-        <List>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <div class="nav-title">
-              <a href="/">Rahul Gupta</a>
-            </div>
-          </ListItem>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <Button as={Link} to="/home" color="purple" animated inverted right>
-              <Button.Content visible>Home</Button.Content>
-              <Button.Content hidden>
-                <Icon name="home"></Icon>
-              </Button.Content>
-            </Button>
-          </ListItem>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <Button as={Link} to="/projects" color="purple" animated inverted>
-              <Button.Content visible>Projects</Button.Content>
-              <Button.Content hidden>
-                <Icon name="file"></Icon>
-              </Button.Content>
-            </Button>
-          </ListItem>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <Button as={Link} to="/contact" color="purple" animated inverted>
-              <Button.Content visible>Contact</Button.Content>
-              <Button.Content hidden>
-                <Icon name="phone"></Icon>
-              </Button.Content>
-            </Button>
-          </ListItem>
-        </List>
-      </Drawer>
-      <IconButton color="primary" onClick={() => setOpenDrawer(!openDrawer)}>
         <MenuIcon className="svg_icons" />
+
+        <Drawer
+          classes={{ paper: classes.paper }}
+          open={openDrawer}
+          onClose={() => setOpenDrawer(false)}
+        >
+          <List>
+            <ListItem onClick={() => setOpenDrawer(false)}>
+              <div class="nav-title">
+                <a href="/">Rahul Gupta</a>
+              </div>
+            </ListItem>
+            <ListItem onClick={() => setOpenDrawer(false)}>
+              <Button
+                as={Link}
+                to="/home"
+                color="purple"
+                animated
+                inverted
+                right
+              >
+                <Button.Content visible>Home</Button.Content>
+                <Button.Content hidden>
+                  <Icon name="home"></Icon>
+                </Button.Content>
+              </Button>
+            </ListItem>
+            <ListItem onClick={() => setOpenDrawer(false)}>
+              <Button as={Link} to="/projects" color="purple" animated inverted>
+                <Button.Content visible>Projects</Button.Content>
+                <Button.Content hidden>
+                  <Icon name="file"></Icon>
+                </Button.Content>
+              </Button>
+            </ListItem>
+            <ListItem onClick={() => setOpenDrawer(false)}>
+              <Button as={Link} to="/contact" color="purple" animated inverted>
+                <Button.Content visible>Contact</Button.Content>
+                <Button.Content hidden>
+                  <Icon name="phone"></Icon>
+                </Button.Content>
+              </Button>
+            </ListItem>
+          </List>
+        </Drawer>
       </IconButton>
     </div>
   );

@@ -22,6 +22,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap");
 
 .heading-text {
   text-align: center;
@@ -40,6 +41,8 @@
 
 .font-style-header {
   font-family: "Dancing Script", cursive;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 @media screen and (max-width: 600px) {
@@ -86,4 +89,33 @@
   100% {
     transform: rotate(0deg);
   }
+}
+
+.resume-button {
+  padding: 1em 0em 2em 0em;
+}
+
+.about-me {
+  text-align: center;
+  padding: 2em 15em 2em 15em;
+}
+
+.sub-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3vh;
+}
+
+@media screen and (max-width: 600px) {
+  .about-me {
+    text-align: center;
+  }
+
+  .sub-text {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2vw;
+  }
+}
+
+.skill-img {
+  margin: 0px 10px 30px 20px;
 }

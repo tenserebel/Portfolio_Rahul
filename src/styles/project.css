@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700");
+
+.proj-container {
+  width: 29.33%;
+  height: 350px;
+  background-color: #000;
+  margin: 5% 2%;
+  transform: scale(1);
+  position: relative;
+  display: block;
+  float: left;
+  transition: all 0.25s linear;
+}
+#proj1 .proj_bg {
+  width: 100%;
+  height: 100%;
+  background-color: #597081;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.25s linear;
+  -webkit-box-shadow: 5px 5px 5px #473144;
+  -moz-box-shadow: 5px 5px 5px #473144;
+  box-shadow: 5px 5px 5px #473144;
+}
+#proj1 .proj_title {
+  width: 300px;
+  height: 25%;
+  background-color: #1982c8;
+  z-index: 2;
+  position: absolute;
+  right: -15px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s linear;
+  box-shadow: 5px 5px 5px;
+}
+#proj1 .proj_title p {
+  letter-spacing: 1.5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  padding-left: 20px;
+  font-size: 20px;
+}
+#proj1 .proj_desc {
+  width: 250px;
+  height: 10%;
+  background-color: #00b686;
+  z-index: 2;
+  position: absolute;
+  right: -15px;
+  top: 85px;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  transition: all 0.25s linear;
+  box-shadow: -5px 5px 15px #2d2f3a;
+}
+#proj1 .proj_desc p {
+  font-family: "Open Sans", sans-serif;
+  color: #eceff1;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding-left: 20px;
+  font-size: 14px;
+}
+#proj1 .proj_info {
+  position: absolute;
+  bottom: 5%;
+  left: -2.5%;
+  opacity: 0.8;
+  background-color: #1982c8;
+  padding: 5%;
+  width: 70%;
+  height: 80%;
+  opacity: 0;
+  transition: all 0.35s linear 0.1s;
+  transform-origin: center center;
+  box-shadow: -5px 5px 15px #473144;
+}
+#proj1 .proj_info p {
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+}
+#proj1:hover {
+  cursor: pointer;
+}
+#proj1:hover .proj_title {
+  top: -10px;
+  right: -20px;
+  height: 15%;
+  width: 300px;
+}
+#proj1:hover .proj_desc {
+  opacity: 0;
+}
+#proj1:hover .proj_info {
+  opacity: 0.8;
+}
+
+.project-link {
+  color: black;
+}
+
+.font-style-header-project {
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+.limit {
+  min-height: 280px;
+  white-space: pre-line;
+  float: left;
+}
+
+@media screen and (max-width: 600px) {
+  .proj-container {
+    width: 49.33%;
+    height: 350px;
+  }
+
+  #proj1 .proj_title {
+    width: 200px;
+    height: 25%;
+  }
+  #proj1 .proj_bg {
+    width: 180%;
+  }
+  #proj1 .proj_desc {
+    width: 150px;
+    height: 10%;
+  }
+  #proj1 .proj_info {
+    width: 90%;
+    height: 80%;
+  }
+  #proj1 .proj_info p {
+    font-size: 10px;
+  }
+  #proj1:hover .proj_title {
+    top: -10px;
+    right: -20px;
+    height: 15%;
+    width: 200px;
+  }
+}
