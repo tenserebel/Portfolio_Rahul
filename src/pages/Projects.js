@@ -12,7 +12,7 @@ const Projects = () => {
         <ProjectCard
           project_name={"Car Damage Detection"}
           project_stack={
-            "Deep Learning | Tensorflow | Computer Science | ML | NumPy"
+            "Deep Learning | Tensorflow | Computer Vision | ML | NumPy"
           }
           project_detail={
             <ul style={{ "list-style-type": "square" }}>
@@ -87,7 +87,9 @@ const Projects = () => {
         />
         <ProjectCard
           project_name={"Image Caption Generator"}
-          project_stack={"Image Processing | Tensorflow | Deep Learning"}
+          project_stack={
+            "Image Processing | Tensorflow | Computer Vision | LSTM | NLP"
+          }
           project_detail={
             <ul style={{ "list-style-type": "square" }}>
               <li className="project-list ">
