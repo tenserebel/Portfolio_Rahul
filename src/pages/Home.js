@@ -8,7 +8,7 @@ import SkillImage from "../Components/SkillImage";
 
 const Home = () => {
   const [text] = useTypewriter({
-    words: ["Student", "ML Enthusiast", "Artist"],
+    words: ["a Student", "a ML Enthusiast", "an Artist"],
     loop: false,
   });
 
@@ -22,7 +22,7 @@ const Home = () => {
 
           <div class="changing-text">
             <div>
-              I am a <span>{text}</span>
+              I am <span>{text}</span>
               <Cursor cursorColor="inherit" />
             </div>
           </div>

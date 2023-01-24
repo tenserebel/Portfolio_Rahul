@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Menu, Button, Icon, Sticky } from "semantic-ui-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 import "../styles/navbar.css";
 import DrawerComponent from "./Drawer";
 import { useMediaQuery, useTheme } from "@material-ui/core";
 
 const Navbar = () => {
+  const [selectedBtn, setSelectedBtn] = useState(-1);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -32,9 +33,11 @@ const Navbar = () => {
               </Menu.Item>
               <Menu.Item position="right">
                 <Button
-                  as={Link}
+                  as={NavLink}
                   to="/home"
                   color="purple"
+                  variant={selectedBtn === 1 ? "contained" : "outlined"}
+                  onClick={() => setSelectedBtn(1)}
                   animated
                   inverted
                   right
@@ -47,9 +50,11 @@ const Navbar = () => {
               </Menu.Item>
               <Menu.Item>
                 <Button
-                  as={Link}
+                  as={NavLink}
                   to="/projects"
                   color="purple"
+                  variant={selectedBtn === 2 ? "contained" : "outlined"}
+                  onClick={() => setSelectedBtn(2)}
                   animated
                   inverted
                 >
@@ -61,9 +66,11 @@ const Navbar = () => {
               </Menu.Item>
               <Menu.Item>
                 <Button
-                  as={Link}
+                  as={NavLink}
                   to="/contact"
                   color="purple"
+                  variant={selectedBtn === 3 ? "contained" : "outlined"}
+                  onClick={() => setSelectedBtn(3)}
                   animated
                   inverted
                 >

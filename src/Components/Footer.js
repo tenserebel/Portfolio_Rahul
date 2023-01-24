@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router";
+import { NavLink } from "react-router-dom";
 import "../styles/footer.css";
 const Footer = () => {
   const location = useLocation();
@@ -17,10 +18,18 @@ const Footer = () => {
             &copy;2023 <strong>Phoenix Corp</strong>, All Rights Reserved
           </small>
           <nav class="footer-nav">
-            <a href="/home">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/contact">Contact Us</a>
-            <a href="/resume">Resume</a>
+            <NavLink to="/home">
+              <a href="/home">Home</a>
+            </NavLink>
+            <NavLink to="projects">
+              <a href="/projects">Projects</a>
+            </NavLink>
+            <NavLink to="contact">
+              <a href="/contact">Contact Us</a>
+            </NavLink>
+            <NavLink to="/resume">
+              <a href="/resume">Resume</a>
+            </NavLink>
           </nav>
         </div>
       </footer>

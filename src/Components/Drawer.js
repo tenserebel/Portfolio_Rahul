@@ -28,6 +28,7 @@ const StyledListItem = makeStyles({
   },
 });
 function DrawerComponent() {
+  const [selectedBtn, setSelectedBtn] = useState(-1);
   // const classes = useStyles();
   const [openDrawer, setOpenDrawer] = useState(false);
   const classes = StyledListItem();
@@ -64,6 +65,8 @@ function DrawerComponent() {
                 as={Link}
                 to="/home"
                 color="purple"
+                variant={selectedBtn === 1 ? "contained" : "outlined"}
+                onClick={() => setSelectedBtn(1)}
                 animated
                 inverted
                 right
@@ -75,7 +78,15 @@ function DrawerComponent() {
               </Button>
             </ListItem>
             <ListItem onClick={() => setOpenDrawer(false)}>
-              <Button as={Link} to="/projects" color="purple" animated inverted>
+              <Button
+                as={Link}
+                to="/projects"
+                color="purple"
+                animated
+                inverted
+                variant={selectedBtn === 2 ? "contained" : "outlined"}
+                onClick={() => setSelectedBtn(2)}
+              >
                 <Button.Content visible>Projects</Button.Content>
                 <Button.Content hidden>
                   <Icon name="file"></Icon>
@@ -83,7 +94,15 @@ function DrawerComponent() {
               </Button>
             </ListItem>
             <ListItem onClick={() => setOpenDrawer(false)}>
-              <Button as={Link} to="/contact" color="purple" animated inverted>
+              <Button
+                as={Link}
+                to="/contact"
+                color="purple"
+                animated
+                inverted
+                variant={selectedBtn === 3 ? "contained" : "outlined"}
+                onClick={() => setSelectedBtn(3)}
+              >
                 <Button.Content visible>Contact</Button.Content>
                 <Button.Content hidden>
                   <Icon name="phone"></Icon>
