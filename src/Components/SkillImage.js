@@ -6,18 +6,18 @@ const SkillImage = () => {
     <div>
       <img
         className="skill-img"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
-        height={50}
-        alt="Python"
-        title="Python"
-      />
-
-      <img
-        className="skill-img"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
         height={50}
         alt="java"
         title="Java"
+      />
+
+      <img
+        className="skill-img"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+        height={50}
+        alt="Python"
+        title="Python"
       />
 
       <img
@@ -49,6 +49,14 @@ const SkillImage = () => {
         height={50}
         alt="Vscode"
         title="Vscode"
+      />
+
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original-wordmark.svg"
+        className="skill-img"
+        height={50}
+        alt="Intellij"
+        title="Intellij"
       />
 
       <img
@@ -89,6 +97,14 @@ const SkillImage = () => {
         height={60}
         alt="Flask"
         title="Flask"
+      />
+
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+        className="skill-img"
+        height={60}
+        alt="AWS"
+        title="AWS"
       />
     </div>
   );

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700");
+
+.swal-overlay {
+  background-color: rgba(197, 66, 241, 0.805);
+  border: 3px solid white;
+}
+
+.MuiInputBase-input {
+  color: rgb(225, 25, 225);
+  width: 300px;
+}
+
+.textfield {
+  padding: 2em;
+}
+
+.textfieldCard {
+  margin-left: 20em;
+  margin-right: 20em;
+  border: 1px solid #de7bff;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 600px) {
+  .textfieldCard {
+    margin-left: 0em;
+    margin-right: 0em;
+    border: 0.5px solid #de7bff;
+    margin-bottom: 2em;
+  }
+}
+.hr5 {
+  border: 0;
+  border-top: medium double #ccc;
+  height: 1px;
+  overflow: visible;
+  padding: 0;
+  color: #ccc;
+  text-align: center;
+}
+
+.hr5::after {
+  content: "OR";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.4em;
+  padding: 0 0.3em;
+  background: #151226;
+  font-family: "Dancing Script", cursive;
+}
+
+.font-style-header-project {
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+.or-text-clause {
+  padding-top: 1.5em;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+}
+.contact-img {
+  margin: 0px 10px 30px 10px;
+}

@@ -68,7 +68,6 @@ const Home = () => {
             Contact
           </Button>
         </div>
-        <hr></hr>
       </div>
     </Layout>
   );

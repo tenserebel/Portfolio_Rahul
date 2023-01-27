@@ -14,7 +14,8 @@ const Footer = () => {
     <div>
       <footer>
         <div class="wrapper">
-          <small>
+          <hr style={{ width: "100%" }}></hr>
+          <small style={{ padding: "0.7em 0.5em 0.7em 0.8em" }}>
             &copy;2023 <strong>Phoenix Corp</strong>, All Rights Reserved
           </small>
           <nav class="footer-nav">

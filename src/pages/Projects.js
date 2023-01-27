@@ -109,6 +109,52 @@ const Projects = () => {
             "https://github.com/RahulGupta77/Image-Caption-Generator"
           }
         />
+        <ProjectCard
+          project_name={"Iris Dataset"}
+          project_stack={"Scikit-learn | Matplotlib | Pandas | Numpy | Seaborn"}
+          project_detail={
+            <ul style={{ "list-style-type": "square" }}>
+              <li className="project-list ">
+                Algorithm used in the project is Stochastic Gradient Descent
+                Regressor.
+              </li>
+              <li className="project-list ">
+                In this problem statement, Feature was "Sepal length" and had to
+                calculate "Sepal width" which is a continuous number.
+              </li>
+              <li className="project-list ">
+                Results: Mean absolute error = 39%, Mean squared error = 21% ,
+                Root mean squared error = 46%
+              </li>
+            </ul>
+          }
+          project_back={"/images/project-iris.jpg"}
+          project_link={"https://github.com/RahulGupta77/Iris_dataset"}
+        />
+        <ProjectCard
+          project_name={"Edge detection"}
+          project_stack={"OpenCV | Numpy | Streamlit | Pillow "}
+          project_detail={
+            <ul style={{ "list-style-type": "square" }}>
+              <li className="project-list ">
+                There were two types of algorithm used in the project.
+              </li>
+              <li className="project-list ">
+                Types of Edge detection implemented are Sobel Edge detection and
+                Canny Edge detection.
+              </li>
+              <li className="project-list ">
+                Created a webapp using streamlit a python library for webapps.
+              </li>
+              <li className="project-list ">
+                Used opencv and pillow(PIL Python Imaging Library) for image
+                processing.
+              </li>
+            </ul>
+          }
+          project_back={"/images/project-edge.jpg"}
+          project_link={"https://github.com/RahulGupta77/Edge_detection"}
+        />
       </div>
     </Layout>
   );

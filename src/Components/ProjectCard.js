@@ -21,7 +21,9 @@ const ProjectCard = ({
         <p>{project_name}</p>
       </div>
       <div class="proj_desc">
-        <p>{project_stack}</p>
+        <p>
+          <b>{project_stack}</b>
+        </p>
       </div>
       <div class="proj_info limit">
         <p>
