@@ -146,7 +146,7 @@ body {
 @media screen and (max-width: 600px) {
   .ui.menu {
     display: flex;
-    /* margin: 1rem 0; */
+
     font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 0.5rem;
     background: #151226;

@@ -13,9 +13,7 @@ const LandingMb = () => {
           <div className="bottom-layer"></div>
           <div className="bottom-layer bottom-layer--2"></div>
           <div className="bottom-layer bottom-layer--3"></div>
-          {/* <div>
-          <img src="images/loading icon.gif" />
-        </div> */}
+
           <div>
             <svg viewBox="0 0 1880 720">
               <text x="20%" y="20%">

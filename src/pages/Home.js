@@ -5,8 +5,10 @@ import { Button } from "semantic-ui-react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
 import SkillImage from "../Components/SkillImage";
+import { useTitle } from "../Components/Title";
 
 const Home = () => {
+  useTitle("Home");
   const [text] = useTypewriter({
     words: ["a Student", "a ML Enthusiast", "an Artist"],
     loop: false,
@@ -26,7 +28,10 @@ const Home = () => {
               <Cursor cursorColor="inherit" />
             </div>
           </div>
-          <img src="images/new.gif" alt="Italian Trulli" />
+          <img
+            src="https://ik.imagekit.io/7afoxixmmnqf/Portfolio_Rahul/new_VFLnbbNQ3K.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1674909381964"
+            alt="Coding Gif"
+          />
         </div>
 
         <br></br>

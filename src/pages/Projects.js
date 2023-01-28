@@ -2,8 +2,11 @@ import React from "react";
 import "../styles/project.css";
 import Layout from "../Components/Layout";
 import ProjectCard from "../Components/ProjectCard";
+import { useTitle } from "../Components/Title";
 
 const Projects = () => {
+  useTitle("Projects");
+
   return (
     <Layout>
       <div>
@@ -34,7 +37,9 @@ const Projects = () => {
             </ul>
           }
           project_link={"https://github.com/RahulGupta77/Car-damage-detection"}
-          project_back={"/images/project-car.jpg"}
+          project_back={
+            "https://ik.imagekit.io/7afoxixmmnqf/Portfolio_Rahul/project-car_DIy_eyJ59x.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674909381491"
+          }
         />
         <ProjectCard
           project_name={"Movie Recommendation system"}
@@ -56,7 +61,9 @@ const Projects = () => {
               </li>
             </ul>
           }
-          project_back={"/images/project-movie.jpg"}
+          project_back={
+            "https://ik.imagekit.io/7afoxixmmnqf/Portfolio_Rahul/project-movie_QtEYsbVMh.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674909381510"
+          }
           project_link={
             "https://github.com/RahulGupta77/Movie-Recommender-System"
           }
@@ -82,7 +89,9 @@ const Projects = () => {
               </li>
             </ul>
           }
-          project_back={"/images/project-co2.jpg"}
+          project_back={
+            "https://ik.imagekit.io/7afoxixmmnqf/Portfolio_Rahul/project-co2_tl_rAOd0Yr.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674909381532"
+          }
           project_link={"https://github.com/tenserebel/CO2-emission"}
         />
         <ProjectCard
@@ -104,7 +113,9 @@ const Projects = () => {
               </li>
             </ul>
           }
-          project_back={"/images/project-image.jpg"}
+          project_back={
+            "https://ik.imagekit.io/7afoxixmmnqf/Portfolio_Rahul/project-image_nMq9I-mZq.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674909381495"
+          }
           project_link={
             "https://github.com/RahulGupta77/Image-Caption-Generator"
           }
@@ -128,7 +139,9 @@ const Projects = () => {
               </li>
             </ul>
           }
-          project_back={"/images/project-iris.jpg"}
+          project_back={
+            "https://ik.imagekit.io/7afoxixmmnqf/Portfolio_Rahul/project-iris_13hQRr5ZFV.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674909381833"
+          }
           project_link={"https://github.com/RahulGupta77/Iris_dataset"}
         />
         <ProjectCard
@@ -152,7 +165,9 @@ const Projects = () => {
               </li>
             </ul>
           }
-          project_back={"/images/project-edge.jpg"}
+          project_back={
+            "https://ik.imagekit.io/7afoxixmmnqf/Portfolio_Rahul/project-edge_SDAJGD6s6.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674909381589"
+          }
           project_link={"https://github.com/RahulGupta77/Edge_detection"}
         />
       </div>

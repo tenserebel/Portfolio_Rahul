@@ -1,9 +1,12 @@
 import React from "react";
 import Layout from "../Components/Layout";
+import { useTitle } from "../Components/Title";
 import "../styles/resume.css";
 import resume from "./rahul.pdf";
 
 const Resume = () => {
+  useTitle("Resume");
+
   return (
     <Layout>
       <h1 className="heading-text">Resume</h1>

@@ -81,8 +81,6 @@ const Navbar = () => {
                 </Button>
               </Menu.Item>
             </Menu>
-
-            {/* <hr style={{ color: "white" }}></hr> */}
           </div>
         </Sticky>
       )}

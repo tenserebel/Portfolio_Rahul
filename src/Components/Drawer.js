@@ -10,18 +10,7 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Button, Icon } from "semantic-ui-react";
 import "../styles/navbar.css";
-// import { makeStyles } from "@mui/styles";
 
-// const useStyles = makeStyles(() => ({
-//   link: {
-//     textDecoration: "none",
-//     color: "blue",
-//     fontSize: "20px",
-//   },
-//   icon: {
-//     color: "white",
-//   },
-// }));
 const StyledListItem = makeStyles({
   paper: {
     backgroundColor: "#151226",
@@ -29,7 +18,7 @@ const StyledListItem = makeStyles({
 });
 function DrawerComponent() {
   const [selectedBtn, setSelectedBtn] = useState(-1);
-  // const classes = useStyles();
+
   const [openDrawer, setOpenDrawer] = useState(false);
   const classes = StyledListItem();
   return (

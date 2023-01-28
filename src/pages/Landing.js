@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
 import "../styles/landing.css";
 import { motion } from "framer-motion";
+import { useTitle } from "../Components/Title";
 
 const RedirectHome = () => {
   const navigate = useNavigate();
@@ -13,12 +14,13 @@ const RedirectHome = () => {
 };
 
 const Landing = () => {
+  useTitle("Landing");
+
   useEffect(() => {
     const timer = setTimeout(() => {
       const buttons = document.getElementById("bottom");
       var id = buttons.getAttribute("id");
 
-      console.log("Hii");
       var layerClass = "." + id + "-layer";
       var layers = document.querySelectorAll(layerClass);
 
@@ -41,9 +43,7 @@ const Landing = () => {
           <div className="bottom-layer"></div>
           <div className="bottom-layer bottom-layer--2"></div>
           <div className="bottom-layer bottom-layer--3"></div>
-          {/* <div>
-          <img src="images/loading icon.gif" />
-        </div> */}
+
           <div>
             <svg viewBox="0 0 1280 720">
               <text text-anchor="middle" x="50%" y="50%">

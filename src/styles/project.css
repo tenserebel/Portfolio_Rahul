@@ -34,7 +34,6 @@
   display: flex;
   align-items: center;
   transition: all 0.4s linear;
-  /* box-shadow: 5px 5px 5px; */
 }
 #proj1 .proj_title p {
   letter-spacing: 1.5px;
@@ -155,7 +154,6 @@
 .project-list {
   padding: 0.2em;
   margin-left: 0.5em;
-  /* font-weight: bold; */
 }
 
 .project-back-img {
