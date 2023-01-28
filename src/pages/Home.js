@@ -40,10 +40,22 @@ const Home = () => {
         <p className="about-me sub-text">
           Hello, my name is Rahul Gupta, and I'm an enthusiastic and committed
           student who's actively pursuing my interests in computer science and
-          picking up new talents. I'm interested in machine learning and data
-          science, and I'm now in my final semester at MIT ADT University. I
-          like making digital art and I'm currently learning Java for enterprise
-          level software.
+          learning new skills.
+          <ul style={{ textAlign: "left", marginLeft: "2em" }}>
+            <br></br>
+            <li>
+              I'm interested in Machine learning, Web development. I'm now in my
+              final semester at MIT ADT University.
+            </li>
+            <li>
+              I like making digital art and also I'm learning Japanese language.
+            </li>
+            <li>
+              I have passed JLPT N4 level of Japanese proficiency test and
+              studying further to reach JLPT N3
+            </li>
+            <li>I'm currently learning Java and practicin my DSA skills.</li>
+          </ul>
         </p>
         <hr></hr>
         <h2 className="font-style-header">Experience</h2>
