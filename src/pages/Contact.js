@@ -6,8 +6,10 @@ import swal from "sweetalert";
 import "../styles/contact.css";
 import { Button } from "semantic-ui-react";
 import { TextField } from "@material-ui/core";
+import { useTitle } from "../Components/Title";
 
 const Contact = () => {
+  useTitle("Contact");
   const [toSend, setToSend] = useState({
     from_name: "",
     to_name: "",
