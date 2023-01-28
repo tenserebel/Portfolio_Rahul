@@ -8,30 +8,6 @@
 
 ---
 
-## Demo
-
-### Overview:
-
-![](portfolio-rahul.gif)
-
-### Home:
-
-![](ss-images/home.png)
-
-### Projects:
-
-![](ss-images/projects.png)
-
-### Contact:
-
-![](ss-images/contact.png)
-
-### Resume:
-
-![](ss-images/Resume.png)
-
----
-
 ## Tech Stack used
 
 - JavaScript
@@ -56,3 +32,29 @@
 - The website is built with the goal of being easy to navigate and visually appealing, making it a great representation of my work.
 
 ---
+
+## Demo
+
+### Overview:
+
+![](portfolio-rahul.gif)
+
+### Home:
+
+![](ss-images/home.png)
+
+### Projects:
+
+![](ss-images/projects.png)
+
+### Contact:
+
+![](ss-images/contact.png)
+
+### Resume:
+
+![](ss-images/Resume.png)
+
+---
+
+
