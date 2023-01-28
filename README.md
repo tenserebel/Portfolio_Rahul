@@ -6,6 +6,12 @@
 
 - [Click here](https://rahul-guptaportfolio.netlify.app/)
 
+## Demo
+
+### Overview:
+
+![](portfolio-rahul.gif)
+
 ---
 
 ## Tech Stack used
@@ -33,11 +39,7 @@
 
 ---
 
-## Demo
 
-### Overview:
-
-![](portfolio-rahul.gif)
 
 ### Home:
 
