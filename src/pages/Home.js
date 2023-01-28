@@ -39,11 +39,11 @@ const Home = () => {
         <h2 className="font-style-header">About Me</h2>
         <p className="about-me sub-text">
           Hello, my name is Rahul Gupta, and I'm an enthusiastic and committed
-          student who's actively pursuing his or her interests in computer
-          science and picking up new talents. I'm interested in machine learning
-          and data science, and I'm now in my final semester at MIT ADT
-          University. I like making digital art and I'm currently learning Java
-          for enterprise level software.
+          student who's actively pursuing his interests in computer science and
+          picking up new talents. I'm interested in machine learning and data
+          science, and I'm now in my final semester at MIT ADT University. I
+          like making digital art and I'm currently learning Java for enterprise
+          level software.
         </p>
         <hr></hr>
         <h2 className="font-style-header">Experience</h2>
